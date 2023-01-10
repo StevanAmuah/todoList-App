@@ -24,7 +24,7 @@ public class TodoItem {
 
     public void setDeadline(LocalDate deadline) {
         this.deadline = deadline;
-     }
+    }
 
     public String getShortDescription() {
         return shortDescription;
@@ -36,5 +36,10 @@ public class TodoItem {
 
     public LocalDate getDeadline() {
         return deadline;
+    }
+
+    @Override
+    public String toString() {
+        return shortDescription;
     }
 }
