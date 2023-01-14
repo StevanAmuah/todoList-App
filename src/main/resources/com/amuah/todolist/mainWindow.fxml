@@ -8,16 +8,36 @@
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
 <BorderPane xmlns:fx="http://javafx.com/fxml"
             fx:controller="com.amuah.todolist.Controller">
     <left>
-        <ListView fx:id="todoListView" onMouseClicked="#handleClickListView">
+        <!--        onMouseClicked="#handleClickListView"-->
+        <ListView fx:id="todoListView">
 
 
         </ListView>
     </left>
     <center>
-        <TextArea fx:id="itemDetailsTextArea"/>
+        <VBox style="-fx-background-color: white" onMouseClicked="#handleClickListView">
+            <TextArea fx:id="itemDetailsTextArea" VBox.vgrow="ALWAYS"/>
+            <HBox>
+                <Label text="Due: " style="-fx-background-color: white">
+                    <font>
+                        <Font name="Times New Roman bold" size="15"/>
+                    </font>
+                </Label>
+                <Label fx:id="deadlineLabel" style="-fx-background-color: white">
+                    <font>
+                        <Font name="Times New Roman bold" size="15"/>
+                    </font>
+                </Label>
+
+            </HBox>
+        </VBox>
+
     </center>
 
 </BorderPane>
