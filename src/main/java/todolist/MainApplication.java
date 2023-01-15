@@ -1,6 +1,6 @@
-package com.amuah.todolist;
+package todolist;
 
-import com.amuah.todolist.dataModel.TodoData;
+import todolist.Models.TodoData;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;

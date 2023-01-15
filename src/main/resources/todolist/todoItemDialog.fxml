@@ -1,0 +1,4 @@
+<?import javafx.scene.control.DialogPane?>
+<DialogPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="todolist.Controllers.DialogController">
+</DialogPane>

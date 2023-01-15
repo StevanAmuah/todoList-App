@@ -10,6 +10,8 @@ module com.example.todolist {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
 
-    opens com.amuah.todolist to javafx.fxml;
-    exports com.amuah.todolist;
+    opens todolist to javafx.fxml;
+    exports todolist;
+    exports todolist.Controllers;
+    opens todolist.Controllers to javafx.fxml;
 }

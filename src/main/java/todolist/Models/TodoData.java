@@ -1,4 +1,4 @@
-package com.amuah.todolist.dataModel;
+package todolist.Models;
 
 import javafx.collections.FXCollections;
 

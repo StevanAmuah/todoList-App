@@ -1,7 +1,7 @@
-package com.amuah.todolist;
+package todolist.Controllers;
 
-import com.amuah.todolist.dataModel.TodoData;
-import com.amuah.todolist.dataModel.TodoItem;
+import todolist.Models.TodoData;
+import todolist.Models.TodoItem;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
@@ -10,10 +10,7 @@ import javafx.scene.control.ListView;
 import javafx.scene.control.SelectionMode;
 import javafx.scene.control.TextArea;
 
-import java.time.LocalDate;
-import java.time.Month;
 import java.time.format.DateTimeFormatter;
-import java.util.ArrayList;
 import java.util.List;
 
 public class Controller {
